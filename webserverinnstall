@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: httpd package is present
-      yum:
+      apt:
         name: httpd
         state: present
     - name: correct index.html is present
